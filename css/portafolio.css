@@ -35,4 +35,25 @@ header ol li{
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
+
+/*
+Estilos para la seccion del hero.
+*/
+
+.hero{
+  height: 250px;
+  background-color: #29293d;
+  color: white;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.hero-txt{
+  width: 50%;
+}
+
+strong{
+  color: #0055ff;
 }
