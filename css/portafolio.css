@@ -5,3 +5,34 @@ html{
 body{
   margin: 0;
 }
+
+header{
+  background-color: #000066;
+  color: white;
+  display: flex;
+  align-items: ce nter;
+  justify-content: space-between;
+}
+
+header h1{
+  margin: 15px;
+}
+
+header ol{
+  margin: 0;
+  padding: 0;
+}
+
+header ol li{
+  margin: 10px;
+  list-style: none;
+  display: inline;
+}
+
+.contenedor{
+  width: 80%;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
