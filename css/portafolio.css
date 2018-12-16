@@ -4,4 +4,51 @@ html{
 
 body{
   margin: 0;
+  background-color: #d1d1e0;
+}
+
+section{
+  border: solid red 1px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+  margin: 20px 10px;
+}
+
+.articulo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articulo-txt{
+  width: 70%;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.ipn-img{
+  background-image: url("../img/ipn-logo-gris.png");
+}
+
+.leng-prog-img{
+  background-image: url("../img/lenguajes-programacion.jpeg");
+}
+
+.data-bases-img{
+  background-image: url("../img/bases-de-datos.jpg");
+}
+
+.electronica-img{
+  background-image: url("../img/electronica.jpg");
+}
+
+.bbva-img{
+  background-image: url("../img/bbva.jpg");
 }
