@@ -1,5 +1,6 @@
 html{
   margin: 0;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 body{
@@ -61,10 +62,6 @@ header{
   justify-content: space-between;
 }
 
-h1{
-  margin: 15px;
-}
-
 header ol{
   margin: 0;
   padding: 0;
@@ -74,6 +71,11 @@ header ol li{
   margin: 10px;
   list-style: none;
   display: inline;
+}
+
+header ol li a{
+  text-decoration: none;
+  color: white;
 }
 
 .contenedor{
@@ -95,7 +97,7 @@ header ol li{
 }
 
 .hero h1{
-  margin-top: 0;
+  margin: 0;
 }
 
 .hero-txt{
@@ -105,4 +107,33 @@ header ol li{
 
 strong{
   color: #0055ff;
+}
+
+footer{
+  background-color: #000066;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.redes-sociales{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.twetter,
+.facebook,
+.github,
+.instagram{
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+i{
+  font-size: 35px;
+  color: white;
 }
