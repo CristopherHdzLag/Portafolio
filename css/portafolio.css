@@ -18,12 +18,17 @@ header{
 }
 
 header ol{
-  margin:  20px;
+  margin:  10px 0px;
+  padding: 0;
+}
+
+header h1{
+  margin:  10px 0px;
   padding: 0;
 }
 
 header ol li{
-  padding: 10px;
+  padding: 10px 5px;
   list-style: none;
   display: inline-block;
 }
@@ -43,9 +48,8 @@ header ol li a{
 
 .hero-txt{
   width: 50%;
-  margin-left: 10%;
-  margin-right: 20px;
-  font-size: 3em;
+  margin: 10px 10%;
+  font-size: 2.8em;
 }
 
 .hero-img{
@@ -62,11 +66,13 @@ strong{
 }
 
 .contenedor{
-  width: 80%;
+  /*width: 80%;*/
+  flex: .8;
   margin: 0 auto;
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
+  flex-wrap: wrap;
 }
 
 .contenedor-hero{
@@ -89,10 +95,11 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .articulo-txt{
-  width: 70%;
+  width: 55%;
 }
 
 .articulo-txt ul li{
@@ -104,11 +111,11 @@ p{
 }
 
 .image{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 
 .ipn-img{
@@ -158,4 +165,101 @@ footer{
 i{
   font-size: 35px;
   color: white;
+}
+
+/*Medias queries para responsive desing */
+/*Desktop first*/
+
+@media screen and (max-width: 1024px)
+{
+  header div h1{
+    font-size: 1.7em;
+  }
+/*
+  a{
+    font-size: .9em;
+  }*/
+}
+
+@media screen and (max-width: 767px)
+{
+  header div h1{
+    font-size: 2em;
+    text-align: center;
+  }
+
+  a{
+    font-size: 1em;
+  }
+
+  header ol li{
+    display: block;
+    text-align: center;
+  }
+
+  .contenedor{
+    flex: 0.9;
+    display: block;
+  }
+
+  .hero-txt{
+    margin-left: 5%;
+    font-size: 2.2em;
+  }
+
+  .articulo{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .articulo-txt{
+    width: 100%;
+  }
+
+  footer .contenedor{
+    display: flex;
+  }
+
+  .footer-left{
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 580px){
+
+  footer{
+    text-align: center;
+  }
+
+  footer .contenedor{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 479px)
+{
+  .hero-txt{
+    font-size: 2em;
+  }
+
+  .image{
+    width: 200px;
+    height: 200px;
+  }
+
+  footer .contenedor{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px)
+{
+  .image{
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-txt{
+    font-size: 1.8em;
+  }
 }
