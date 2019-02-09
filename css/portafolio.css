@@ -47,7 +47,7 @@ header ol li a{
 }
 
 .hero-txt{
-  width: 50%;
+  width: auto;
   margin: 10px 10%;
   font-size: 2.8em;
 }
@@ -94,7 +94,7 @@ section{
 .articulo{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -111,8 +111,7 @@ p{
 }
 
 .image{
-  width: 300px;
-  height: 300px;
+  max-width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,22 +119,32 @@ p{
 
 .ipn-img{
   background-image: url("../img/ipn-logo-gris.png");
+  width: 300px;
+  height: 300px;
 }
 
 .leng-prog-img{
   background-image: url("../img/lenguajes-programacion.jpeg");
+  width: 300px;
+  height: 300px;
 }
 
 .data-bases-img{
   background-image: url("../img/bases-de-datos.jpg");
+  width: 300px;
+  height: 300px;
 }
 
 .electronica-img{
   background-image: url("../img/electronica.jpg");
+  width: 300px;
+  height: 300px;
 }
 
 .bbva-img{
   background-image: url("../img/bbva.jpg");
+  width: 300px;
+  height: 300px;
 }
 
 footer{
@@ -175,21 +184,12 @@ i{
   header div h1{
     font-size: 1.7em;
   }
-/*
-  a{
-    font-size: .9em;
-  }*/
 }
 
 @media screen and (max-width: 767px)
 {
   header div h1{
-    font-size: 2em;
     text-align: center;
-  }
-
-  a{
-    font-size: 1em;
   }
 
   header ol li{
@@ -223,6 +223,22 @@ i{
   .footer-left{
     margin-right: 5px;
   }
+
+  header div h1,
+  footer h1{
+    font-size: 22px;
+  }
+
+  .articulo h2{
+    font-size: 16px;
+  }
+
+  header div ol li a,
+  .articulo p,
+  .articulo div ul li,
+  footer p{
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 580px){
@@ -239,7 +255,7 @@ i{
 @media screen and (max-width: 479px)
 {
   .hero-txt{
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .image{
@@ -250,6 +266,23 @@ i{
   footer .contenedor{
     display: block;
   }
+
+  header div h1,
+  footer h1{
+    font-size: 18px;
+  }
+
+  .articulo h2{
+    font-size: 12px;
+  }
+
+  header div ol li a,
+  .articulo p,
+  .articulo div ul li,
+  footer p{
+    font-size: 10px;
+  }
+
 }
 
 @media screen and (max-width: 320px)
