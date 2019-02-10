@@ -105,9 +105,9 @@ h3{
   width: 55%;
 }
 
-.fecha{
+div .fecha{
   text-align: right;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .image{
