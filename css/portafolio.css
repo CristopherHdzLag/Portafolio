@@ -91,6 +91,7 @@ h2{
 
 h3{
   border-bottom: solid #000066; 1px;
+  margin-top: 40px;
 }
 
 .articulo{
@@ -102,6 +103,11 @@ h3{
 
 .articulo-txt{
   width: 55%;
+}
+
+.fecha{
+  text-align: right;
+  font-weight: bold;
 }
 
 .image{
