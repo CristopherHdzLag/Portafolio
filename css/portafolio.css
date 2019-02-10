@@ -38,23 +38,16 @@ header ol li a{
   color: white;
 }
 
-.hero{
-  background-color: #809BB6;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .hero-txt{
-  width: auto;
-  margin: 10px 10%;
+  width: 40%;
+  margin: 0;
+  margin-left: 10%;
   font-size: 2.8em;
 }
 
 .hero-img{
   background-image: url("../img/hero.jpg");
-  width: 60%;
+  width: 50%;
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -72,15 +65,14 @@ strong{
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
-  flex-wrap: wrap;
 }
 
 .contenedor-hero{
-  width: 100%;
-  margin: 0 auto;
-  display: inherit;
-  align-items: inherit;
-  justify-content: inherit;
+  background-color: #809BB6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 section{
@@ -184,6 +176,15 @@ i{
   header div h1{
     font-size: 1.7em;
   }
+
+  .hero-txt{
+    margin-left: 10%;
+    font-size: 2.3em;
+  }
+
+  .hero-img{
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 767px)
@@ -202,9 +203,22 @@ i{
     display: block;
   }
 
+  .contenedor-hero{
+    flex-wrap: wrap;
+  }
+
   .hero-txt{
+    width: 100%;
     margin-left: 5%;
     font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .hero-img{
+    width: 100%;
+    background-position: center;
+    height: 260px;
   }
 
   .articulo{
@@ -222,22 +236,6 @@ i{
 
   .footer-left{
     margin-right: 5px;
-  }
-
-  header div h1,
-  footer h1{
-    font-size: 22px;
-  }
-
-  .articulo h2{
-    font-size: 16px;
-  }
-
-  header div ol li a,
-  .articulo p,
-  .articulo div ul li,
-  footer p{
-    font-size: 14px;
   }
 }
 
@@ -258,6 +256,10 @@ i{
     font-size: 1.8em;
   }
 
+  .hero-img{
+    height: 240px;
+  }
+
   .image{
     width: 200px;
     height: 200px;
@@ -265,6 +267,37 @@ i{
 
   footer .contenedor{
     display: block;
+  }
+
+  header div h1,
+  footer h1{
+    font-size: 22px;
+  }
+
+  .articulo h2{
+    font-size: 16px;
+  }
+
+  header div ol li a,
+  .articulo p,
+  .articulo div ul li,
+  footer p{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 320px)
+{
+  .image{
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-txt{
+    font-size: 1.8em;
+  }
+
+  .hero-img{
+    height: 200px;
   }
 
   header div h1,
@@ -281,18 +314,5 @@ i{
   .articulo div ul li,
   footer p{
     font-size: 10px;
-  }
-
-}
-
-@media screen and (max-width: 320px)
-{
-  .image{
-    width: 150px;
-    height: 150px;
-  }
-
-  .hero-txt{
-    font-size: 1.8em;
   }
 }
