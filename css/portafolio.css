@@ -59,8 +59,7 @@ strong{
 }
 
 .contenedor{
-  /*width: 80%;*/
-  flex: .8;
+  width: 80%;
   margin: 0 auto;
   display: inherit;
   align-items: inherit;
