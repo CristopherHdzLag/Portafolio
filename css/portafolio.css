@@ -1,7 +1,7 @@
 html{
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body{
@@ -23,10 +23,10 @@ header ol{
   padding: 0;
 }
 
-header h1{
+h1{
   margin:  10px 0px;
   padding: 0;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 header ol li{
@@ -38,26 +38,7 @@ header ol li{
 header ol li a{
   text-decoration: none;
   color: white;
-}
-
-.hero-txt{
-  width: 40%;
-  margin: 0;
-  margin-left: 10%;
-  /*font-size: 2.8em;*/
-}
-
-.hero-img{
-  background-image: url("../img/hero.jpg");
-  width: 50%;
-  height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-strong{
-  color: #0055ff;
+  font-size: 1em;
 }
 
 .contenedor{
@@ -68,12 +49,35 @@ strong{
   justify-content: inherit;
 }
 
+
+
 .contenedor-hero{
   background-color: #809BB6;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.hero-txt{
+  width: 40%;
+  margin: 0;
+  font-size: 1.8em;
+  margin-left: 10%;
+}
+
+.hero-img{
+  background-image: url("../img/hero.jpg");
+  width: 50%;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+strong{
+  color: #0055ff;
 }
 
 section{
@@ -87,11 +91,17 @@ section{
 h2{
   border-bottom: solid #000066; 1px;
   text-align: left;
+  font-size: 1.2em;
 }
 
 h3{
   border-bottom: solid #000066; 1px;
   margin-top: 40px;
+  font-size: .1em;
+}
+
+p, ul{
+  font-size: .9em;
 }
 
 .articulo{
@@ -181,27 +191,46 @@ i{
 
 @media screen and (max-width: 1024px)
 {
-  header div h1{
-    /*font-size: 1.6em;*/
+  html{
+    font-size: 14px;
+  }
+
+  .contenedor-hero{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: block;
   }
 
   .hero-txt{
     margin-left: 10%;
+    position: absolute;
+    width: auto;
+    z-index: 2;
+    padding: 2em 0;
   }
 
   .hero-img{
-    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-size: 100%  auto;
+    z-index: 1;
   }
 }
 
 @media screen and (max-width: 767px)
 {
-  header div h1{
-    text-align: center;
-    font-size: 18px;
+  html{
+    font-size: 12px;
   }
 
-  header ol li{
+  header ol li,
+  h1{
     display: block;
     text-align: center;
   }
@@ -211,22 +240,11 @@ i{
     display: block;
   }
 
-  .contenedor-hero{
-    flex-wrap: wrap;
-  }
-
   .hero-txt{
     width: 100%;
-    margin-left: 5%;
-    font-size: 2em;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 10px;
-  }
-
-  .hero-img{
-    width: 100%;
-    background-position: center;
-    height: 260px;
   }
 
   .articulo{
@@ -257,6 +275,10 @@ i{
 
 @media screen and (max-width: 580px){
 
+  html{
+    font-size: 11px;
+  }
+
   footer{
     text-align: center;
   }
@@ -268,14 +290,6 @@ i{
 
 @media screen and (max-width: 479px)
 {
-  .hero-txt{
-    font-size: 1.6em;
-  }
-
-  .hero-img{
-    height: 240px;
-  }
-
   .image{
     width: 200px;
     height: 200px;
@@ -288,25 +302,6 @@ i{
   footer .contenedor{
     display: block;
   }
-
-  header div h1,
-  footer h1{
-    font-size: 16px;
-  }
-
-  .articulo h2{
-    font-size: 14px;
-  }
-
-  .articulo h3{
-    font-size: 12px;
-  }
-
-  header div ol li a,
-  .articulo p,
-  .articulo div ul li,
-  footer p{
-  font-size: 10px;
 }
 
 @media screen and (max-width: 320px)
@@ -316,31 +311,7 @@ i{
     height: 150px;
   }
 
-  .hero-txt{
-    font-size: 1.2em;
-  }
-
-  .hero-img{
-    height: 200px;
-  }
-
-  header div h1,
-  footer h1{
-    font-size: 14px;
-  }
-
-  .articulo h2{
-    font-size: 12px;
-  }
-
-  .articulo h3{
-    font-size: 10px;
-  }
-
-  header div ol li a,
-  .articulo p,
-  .articulo div ul li,
-  footer p{
-    font-size: 8px;
+  .contenedor-hero{
+    height: 180px;
   }
 }
