@@ -9,15 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <div class="icon-menu" id="menu">
+      <i class="fas fa-bars "></i>
+    </div>
     <header>
       <div class="contenedor">
         <h1>
           Cristopher Hernández Lagunas
         </h1>
-        <ol>
-          <li><a href="#sobre-mi">Sobre mi</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
+        <ol class="links">
+          <li><a class="link1" href="#sobre-mi">Sobre mi</a></li>
+          <li><a class="link2" href="#experiencia">Experiencia</a></li>
+          <li><a class="link3" href="#habilidades">Habilidades</a></li>
         </ol>
       </div>
 
@@ -200,5 +203,38 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      /*
+        console.log("Hola Mundo JS.");
+        console.log(document.querySelector(".links"));
+      */
+
+      var js_links = document.querySelector(".links");
+      var js_menu = document.querySelector("#menu");
+      var js_link1 = document.querySelector(".link1");
+      var js_link2 = document.querySelector(".link2");
+      var js_link3 = document.querySelector(".link3");
+
+      js_menu.addEventListener("click",agregarClase)
+      js_link1.addEventListener("click",quitarClase)
+      js_link2.addEventListener("click",quitarClase)
+      js_link3.addEventListener("click",quitarClase)
+
+      function quitarClase()
+      {
+        js_links.classList.remove("active");
+      }
+
+      function agregarClase(){
+        if(js_links.classList.contains("active")){
+          js_links.classList.remove("active");
+        }
+        else{
+          js_links.classList.add("active");
+        }
+      }
+
+
+    </script>
   </body>
 </html>

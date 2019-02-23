@@ -9,6 +9,21 @@ body{
   background-color: #f0f0f0;
 }
 
+.icon-menu{
+    color: white;
+    background-color: rgba(0,0,102,.5);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+}
+
 header{
   background-color: #000066;
   color: white;
@@ -25,7 +40,7 @@ header ol{
 
 h1{
   margin:  10px 0px;
-  padding: 0;
+  padding: 10px 0;
   font-size: 1.4em;
 }
 
@@ -270,6 +285,38 @@ i{
 
   .footer-left{
     margin-right: 5px;
+  }
+
+  .icon-menu{
+      display: flex;
+  }
+
+  .links{
+    position: fixed;
+    background-color: rgba(0,85,255,.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .3s;
+  }
+
+  .active{
+    left: 0;
+  }
+
+  header ol {
+    margin: 0;
+  }
+
+  header ol li {
+    width: 100%;
   }
 }
 
