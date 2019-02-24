@@ -84,8 +84,9 @@ header ol li a{
 
 .hero-img{
   background-image: url("../img/hero.jpg");
-  width: 50%;
+  width: 40%;
   height: 250px;
+  margin-right: 10%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -204,7 +205,7 @@ i{
 /*Medias queries para responsive desing */
 /*Desktop first*/
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1023px)
 {
   html{
     font-size: 14px;
