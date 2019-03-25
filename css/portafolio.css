@@ -1,7 +1,7 @@
 html{
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body{
@@ -133,6 +133,7 @@ p{
   text-align: center;
   border: 1px solid rgba(0,0,0,0);
   border-radius: 20px;
+  font-size: 1.1em;
 }
 
 .habilidad:hover{
@@ -163,8 +164,8 @@ p{
   font-size: 1.2em;
 }
 
-ul{
-  font-size: .9em;
+ul {
+  font-size: 1.1em;
 }
 
 div .fecha{
@@ -234,7 +235,7 @@ i:hover{
 @media screen and (max-width: 1023px)
 {
   html{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   section{
@@ -261,7 +262,7 @@ i:hover{
 @media screen and (max-width: 767px)
 {
   html{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   header ol li,
@@ -338,7 +339,7 @@ i:hover{
 @media screen and (max-width: 580px){
 
   html{
-    font-size: 11px;
+    font-size: 12px;
   }
 
   section{
