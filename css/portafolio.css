@@ -6,26 +6,13 @@ html{
 
 body{
   margin: 0;
-  background-color: #f0f0f0;
-}
-
-.icon-menu{
-    color: white;
-    background-color: rgba(0,0,102,.5);
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 4;
-    left: 5px;
-    top: 5px;
+  background-color: #303030;
+  color: #C8C8C8;
 }
 
 header{
-  background-color: #000066;
+  height: 8vh;
+  background-color: #151515;
   color: white;
   text-transform: uppercase;
   display: flex;
@@ -33,15 +20,21 @@ header{
   justify-content: space-between;
 }
 
-header ol{
-  margin:  10px 0px;
-  padding: 0;
+.contenedor{
+  width: 85%;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
 }
 
 h1{
-  margin:  10px 0px;
-  padding: 10px 0;
   font-size: 1.4em;
+}
+
+header ol{
+  margin:  10px 0px;
+  padding: 0;
 }
 
 header ol li{
@@ -52,72 +45,49 @@ header ol li{
 
 header ol li a{
   text-decoration: none;
+  padding: 5px;
   color: white;
   font-size: 1em;
+  border: 1px solid rgba(0,0,0,0);
 }
 
-.contenedor{
-  width: 80%;
-  margin: 0 auto;
-  display: inherit;
-  align-items: inherit;
-  justify-content: inherit;
+header ol li a:hover{
+  border: 1px solid #1798C8;
+  border-radius: 5px;
+  color: #1798C8;
 }
 
-
-
-.contenedor-hero{
-  background-color: #809BB6;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.icon-menu{
+    color: white;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 5px;
+    top: 5px;
 }
 
-
-.hero-txt{
-  width: 40%;
-  margin: 0;
-  font-size: 1.8em;
-  margin-left: 10%;
+section {
+  margin: 20vh 0;
+  opacity: 0;
+  animation-name: anim-opacidad;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
-.hero-img{
-  background-image: url("../img/hero.jpg");
-  width: 40%;
-  height: 250px;
-  margin-right: 10%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-strong{
-  color: #0055ff;
-}
-
-section{
-  border: solid #000066; 1px;
-  border-radius: 10px;
-  background-color: white;
-  padding: 15px;
-  margin: 20px 10px;
-}
-
-h2{
-  border-bottom: solid #000066; 1px;
-  text-align: left;
-  font-size: 1.2em;
-}
-
-h3{
-  border-bottom: solid #000066; 1px;
-  margin-top: 40px;
-  font-size: 1em;
-}
-
-p, ul{
-  font-size: .9em;
+@keyframes anim-opacidad {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .articulo{
@@ -128,12 +98,11 @@ p, ul{
 }
 
 .articulo-txt{
-  width: 65%;
+  width: 70%;
 }
 
-div .fecha{
-  text-align: right;
-  font-weight: bold;
+p{
+  margin: 10px 0;
 }
 
 .image{
@@ -143,38 +112,81 @@ div .fecha{
   background-position: center;
 }
 
+.experiencia{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between  ;
+  flex-wrap: wrap;
+}
+
+.habilidades{
+  display: flex;
+  align-items: center;
+  justify-content: space-between  ;
+  flex-wrap: wrap;
+}
+
+.habilidad{
+  margin: 10px;
+  padding: 5px;
+  width: 15%;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 20px;
+}
+
+.habilidad:hover{
+  margin: 10px;
+  padding: 5px;
+  width: 15%;
+  border: 1px solid #1798C8;
+  border-radius: 20px;
+  color: #1798C8;
+}
+
+h2{
+  color: white;
+  border-bottom: solid #1798C8 1px;
+  text-align: left;
+  font-size: 2em;
+  width: 100%;
+}
+
+h3{
+  color: white;
+  border-bottom: solid #1798C8 1px;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+ul{
+  font-size: .9em;
+}
+
+div .fecha{
+  color: white;
+  text-align: right;
+  font-weight: bold;
+}
+
 .ipn-img{
+  border-radius: 50%;
   background-image: url("../img/ipn-logo-gris.png");
-  width: 35%;
+  width: 250px;
   height: 250px;
 }
 
-.leng-prog-img{
-  background-image: url("../img/lenguajes-programacion.jpeg");
-  width: 35%;
-  height: 250px;
-}
-
-.data-bases-img{
-  background-image: url("../img/bases-de-datos.jpg");
-  width: 35%;
-  height: 250px;
-}
-
-.electronica-img{
-  background-image: url("../img/electronica.jpg");
-  width: 35%;
-  height: 250px;
-}
-
-.bbva-img{
-  background-image: url("../img/bbva.jpg");
-  width: 35%;
-  height: 250px;
+.informacion{
+  padding: 5px;
+  width: 20%;
 }
 
 footer{
-  background-color: #000066;
+  background-color: #151515;
   color: white;
   display: flex;
   align-items: center;
@@ -182,10 +194,20 @@ footer{
   padding-bottom: 10px;
 }
 
+footer div.footer-left{
+  width: 50%;
+}
+
+footer div.footer-right{
+  text-align: center;
+  width: 50%;
+}
+
 .redes-sociales{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 10px 0;
 }
 
 .twetter,
@@ -198,8 +220,12 @@ footer{
 }
 
 i{
-  font-size: 35px;
+  font-size: 25px;
   color: white;
+}
+
+i:hover{
+  color: #1798C8;
 }
 
 /*Medias queries para responsive desing */
@@ -211,32 +237,25 @@ i{
     font-size: 14px;
   }
 
-  .contenedor-hero{
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    display: block;
+  section{
+    margin: 10vh 0;;
   }
 
-  .hero-txt{
-    margin-left: 10%;
-    position: absolute;
-    width: auto;
-    z-index: 2;
-    padding: 2em 0;
+  .articulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .hero-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .articulo-txt{
     width: 100%;
-    height: auto;
-    background-size: 100%  auto;
-    z-index: 1;
   }
+
+  .ipn-img {
+    margin: 25px;
+  }
+
 }
 
 @media screen and (max-width: 767px)
@@ -251,16 +270,13 @@ i{
     text-align: center;
   }
 
+  section{
+    margin: 5vh 0;;
+  }
+
   .contenedor{
     width: 90%;
     display: block;
-  }
-
-  .hero-txt{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 10px;
   }
 
   .articulo{
@@ -268,24 +284,8 @@ i{
     flex-direction: column;
   }
 
-  .articulo-txt{
-    width: 100%;
-  }
-
-  .bbva-img,
-  .electronica-img,
-  .data-bases-img,
-  .leng-prog-img,
-  .ipn-img{
-    height: 200px;
-  }
-
   footer .contenedor{
     display: flex;
-  }
-
-  .footer-left{
-    margin-right: 5px;
   }
 
   .icon-menu{
@@ -294,8 +294,8 @@ i{
 
   .links{
     position: fixed;
-    background-color: rgba(0,85,255,.8);
-    z-index: 3;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
     top: 0;
     left: -100vw;
     width: 100vw;
@@ -319,6 +319,20 @@ i{
   header ol li {
     width: 100%;
   }
+
+  .informacion{
+    width: 40%;
+  }
+
+  .habilidad{
+    margin: 5px;
+    width: 20%;
+  }
+
+  .habilidad:hover{
+    margin: 5px;
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 580px){
@@ -327,12 +341,40 @@ i{
     font-size: 11px;
   }
 
+  section{
+    margin: 2vh 0;
+  }
+
+  .informacion{
+    width: 100%;
+  }
+
+  .habilidad{
+    width: 25%;
+  }
+
+  .habilidad:hover{
+    margin: 5px;
+    width: 25%;
+  }
+
+  footer div.footer-left{
+    width: 100%;
+  }
+
+  footer div.footer-right{
+    width: 100%;
+  }
+
   footer{
     text-align: center;
   }
 
   footer .contenedor{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -343,12 +385,12 @@ i{
     height: 200px;
   }
 
-  .contenedor{
-    width: 100%;
+  .habilidad{
+    width: 40%;
   }
 
-  footer .contenedor{
-    display: block;
+  .habilidad:hover{
+    width: 40%;
   }
 }
 
@@ -357,9 +399,5 @@ i{
   .image{
     width: 150px;
     height: 150px;
-  }
-
-  .contenedor-hero{
-    height: 180px;
   }
 }
