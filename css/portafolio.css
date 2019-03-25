@@ -164,8 +164,8 @@ p{
   font-size: 1.2em;
 }
 
-ul {
-  font-size: 1.1em;
+.informacion ul li{
+  font-size: .9em;
 }
 
 div .fecha{
@@ -325,6 +325,10 @@ i:hover{
     width: 40%;
   }
 
+  .informacion ul li{
+    font-size: 1em;
+  }
+
   .habilidad{
     margin: 5px;
     width: 20%;
@@ -348,6 +352,10 @@ i:hover{
 
   .informacion{
     width: 100%;
+  }
+
+  .informacion ul li{
+    font-size: 1.1em;
   }
 
   .habilidad{
