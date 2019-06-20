@@ -95,7 +95,8 @@ h1{
 .ipn-img{
   margin: 20px;
   border-radius: 20px;
-  background-image: url("../img/ipn-logo-gris.png");
+  border: solid 1px white;
+  background-image: url("../img/cris2.jpg");
   width: 250px;
   height: 250px;
 }
