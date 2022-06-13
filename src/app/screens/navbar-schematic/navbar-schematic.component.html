@@ -2,7 +2,7 @@
 
 <mat-toolbar fxLayout="row" color="primary">
   <span fxFlex>Mi portafolio</span>
-  <button mat-button *ngFor="let item of menuItems" 
+  <button routerLink={{item.routerLink}} mat-button *ngFor="let item of menuItems" 
       [fxShow]="item.showOnDesktop" 
       [fxShow.xs]="item.showOnMobile"
       [fxShow.sm]="item.showOnTablet">
@@ -19,7 +19,7 @@
                    [fxShow.sm]="!item.showOnTablet" 
                    [fxShow.xs]="!item.showOnMobile">
                   <button mat-menu-item>
-                      <mat-icon class="mr">{{item.icon}}</mat-icon>
+                      <mat-icon routerLink={{item.routerLink}}  class="mr">{{item.icon}}</mat-icon>
                       {{item.label}}
                   </button>
                   <mat-divider></mat-divider>

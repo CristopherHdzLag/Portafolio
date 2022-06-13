@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { NavbarSchematicComponent } from './screens/home-screen/navbar-schematic/navbar-schematic.component';
+import { NavbarSchematicComponent } from './screens/navbar-schematic/navbar-schematic.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutMeComponent } from './screens/home-screen/about-me/about-me.component';
@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import { TechnologiesComponent } from './screens/home-screen/technologies/technologies.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { FooterComponent } from './screens/home-screen/footer/footer.component';
+import { AplicationsScreenComponent } from './screens/aplications-screen/aplications-screen.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './screens/home-screen/footer/footer.component';
     AboutMeComponent,
     WorkExperienceComponent,
     TechnologiesComponent,
-    FooterComponent
+    FooterComponent,
+    AplicationsScreenComponent
   ],
   imports: [
     BrowserModule,
