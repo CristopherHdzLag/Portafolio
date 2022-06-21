@@ -1,0 +1,442 @@
+html{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+body{
+  margin: 0;
+  background-color: #53A9C4;
+  color: black;
+}
+
+.icon-menu{
+    color: white;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 5px;
+    top: 5px;
+}
+
+.contenedor-base{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contenedor{
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+header{
+  height: auto;
+  background-color: #3540E3;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ol{
+  margin:  10px 0px;
+  padding: 0;
+}
+
+header ol li{
+  padding: 10px 5px;
+  list-style: none;
+  display: inline-block;
+}
+
+header ol li a{
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+header ol li a:hover{
+  border: 1px solid #3FFFEE;
+  border-radius: 5px;
+  color: #3FFFEE;
+}
+
+.links li a{
+  font-size: 0.9em;
+}
+
+h1{
+  font-size: 1.2em;
+  color: white;
+}
+
+.cont-left{
+  width: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ipn-img{
+  margin: 20px;
+  border-radius: 20px;
+  border: solid 1px white;
+  background-image: url("../img/cris2.jpg");
+  width: 250px;
+  height: 250px;
+}
+
+.image{
+  max-width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titulo,
+.personal,
+.contacto,
+.habilidades{
+  width: 90%;
+  margin: 30px 0;
+}
+
+.titulo h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+strong{
+  color: white;
+}
+
+.cont-right{
+  width: 70%;
+  border-left: solid 1px #3540E3;
+  background-color: white;
+}
+
+section {
+  opacity: 0;
+  animation-name: anim-opacidad;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-opacidad {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.articulo{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.experiencia{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+p{
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+h2{
+  color: #A5A5A5;
+  border-bottom: solid #3540E3 1px;
+  text-align: left;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+h3{
+  color: white;
+  border-bottom: solid #3540E3 1px;
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+h4{
+  margin: 0;
+  font-size: 0.9em;
+  color: #A5A5A5;
+}
+
+.proyectos{
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.informacion{
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.informacion ul li{
+  font-size: 0.9em;
+}
+
+span {
+  font-size: 0.9em;
+  color: white;
+}
+
+div .fecha{
+  color: #A5A5A5;
+  text-align: right;
+  font-weight: bold;
+}
+
+.formacion{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.informacion{
+  padding: 5px;
+}
+
+.formacion{
+  margin: 20px;
+}
+
+.anio{
+  width: 20%;
+  color: #3540E3;
+  font-weight: bold;
+}
+
+.descripcion{
+  width: 80%;
+}
+
+footer{
+  background-color: #3540E3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+footer div.footer-left{
+  width: 50%;
+}
+
+footer div.footer-right{
+  text-align: center;
+  width: 50%;
+}
+
+.redes-sociales{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.twetter,
+.facebook,
+.github,
+.linkedin{
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+i{
+  font-size: 25px;
+  color: white;
+}
+
+.habilidad{
+  font-size: 0.9em;
+  margin: 20px 0;
+  color: white;
+}
+
+/*Medias queries para responsive desing */
+/*Desktop first*/
+
+@media screen and (max-width: 1023px)
+{
+  html{
+    font-size: 16px;
+  }
+
+  header{
+    height: auto;
+  }
+  .contenedor-base{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-base h1{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+
+  .contenedor-base ol{
+    text-align: center;
+    width: 100%;
+  }
+
+  .links{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .informacion{
+    width: 100%;
+  }
+
+  .ipn-img{
+    margin: 15px;
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 767px)
+{
+  html{
+    font-size: 14px;
+  }
+
+  .ipn-img{
+    margin: 15px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .contenedor-base h1{
+    margin: 15px 0;
+  }
+
+  .icon-menu{
+    display: flex;
+  }
+
+  .links li{
+    width: 100%;
+  }
+
+  .links{
+    position: fixed;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    font-size: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .3s;
+  }
+
+  .active{
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 579px){
+
+  html{
+    font-size: 12px;
+  }
+
+  .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .cont-left{
+    width: 100%;
+  }
+
+  .cont-right{
+    width: 100%;
+  }
+
+  .titulo,
+  .personal,
+  .contacto,
+  .habilidades{
+    margin: 0;
+  }
+
+  footer div.footer-left{
+    width: 100%;
+  }
+
+  footer div.footer-right{
+    width: 100%;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  footer .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .habilidad{
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 320px)
+{
+  .image{
+    width: 150px;
+    height: 150px;
+  }
+}
