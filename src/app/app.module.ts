@@ -53,4 +53,4 @@ import { ElectrocodeComponent } from './screens/terms-and-conditions/electrocode
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
