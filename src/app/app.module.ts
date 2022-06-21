@@ -21,6 +21,7 @@ import { TechnologiesComponent } from './screens/home-screen/technologies/techno
 import {MatChipsModule} from '@angular/material/chips';
 import { FooterComponent } from './screens/home-screen/footer/footer.component';
 import { AplicationsScreenComponent } from './screens/aplications-screen/aplications-screen.component';
+import { ElectrocodeComponent } from './screens/terms-and-conditions/electrocode/electrocode.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AplicationsScreenComponent } from './screens/aplications-screen/aplicat
     WorkExperienceComponent,
     TechnologiesComponent,
     FooterComponent,
-    AplicationsScreenComponent
+    AplicationsScreenComponent,
+    ElectrocodeComponent
   ],
   imports: [
     BrowserModule,
