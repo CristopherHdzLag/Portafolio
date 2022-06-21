@@ -10,7 +10,7 @@
       {{item.label}}
   </button>
   <ng-container>
-      <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs fxShow.sm>
+      <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
           <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #dropMenu="matMenu">
@@ -18,8 +18,8 @@
               <div [fxShow]="!item.showOnDesktop" 
                    [fxShow.sm]="!item.showOnTablet" 
                    [fxShow.xs]="!item.showOnMobile">
-                  <button mat-menu-item>
-                      <mat-icon routerLink={{item.routerLink}}  class="mr">{{item.icon}}</mat-icon>
+                  <button routerLink={{item.routerLink}} mat-menu-item>
+                      <mat-icon class="mr">{{item.icon}}</mat-icon>
                       {{item.label}}
                   </button>
                   <mat-divider></mat-divider>
