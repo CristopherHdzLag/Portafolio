@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AplicationsScreenComponent implements OnInit {
 
-  constructor() { }
+  logo : string = "https://cristopherhdzlag.github.io/Portafolio/assets/icono_1024.jpg";
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }
